@@ -1,0 +1,228 @@
+* {
+    font-family: 'Roboto', sans-serif; /* универсальный силектор для подключения шрифта */
+}
+header {
+    position: relative;/* для добовления картинки на задний фон следующего блока */
+}
+nav {
+    height: 52px;
+    background: #212121;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 70px;
+    margin: 0;
+    list-style-type: none;/* убрать точки метки на ссылках */
+}
+
+.menu .menu_link {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 15px;
+    color: #FFFFFF;
+    text-decoration: none;/* убирает подчеркивание ссылки */    
+}
+
+.menu .menu_item /* рисовка разделителя ссылок */ {
+    border-right: 2px dotted black;
+    padding-right: 38px;
+}
+
+.subheader {
+    position: absolute;/* для добовления картинки на задний фон следующего блока */
+    
+    width: 100%;/* для добовления картинки на задний фон следующего блока */
+    height: 87px;
+    background: rgba(0, 0, 0, .6);/* альфаканал для прозрачности блока не задевая элементы */  
+
+}
+
+.subheader .subheader_logo {
+    display: block;
+    margin-top: 16px;
+    max-width: 100%;/* делаем максимальную ширину блоков контейнера, для того если логотип поменяется */
+}
+
+.subheader .subheader_official {
+    margin-top: 6px;
+   opacity: 0.5;/* opacity чтобы сделал текст прозрачным */
+    font-weight: 100;
+    font-size: 13px;
+    color: #FFFFFF;
+}
+
+.subheader .subheader_call {
+    display: block;
+    margin-top: 19px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    text-align: right;
+    color: #FFFFFF;
+}
+
+.subheader .subheader_phone {
+    font-weight: 400;
+    display: block;
+    font-size: 22px;
+    line-height: 30px;
+    color: #FFFFFF;
+    text-align: right;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.subheader .subheader_btn {
+    margin-top: 19px;
+    width: 172px;
+    height: 46px;
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
+    border: none;
+    border-radius: 4px;
+
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+}
+
+.promo {
+    min-height: 800px;
+    padding: 150px 0 135px 0;
+    background: url('../img/bg/uber_bg.png') center center/cover no-repeat;/* расположение заднего фона без повторений в центре */
+}
+
+.promo .promo_header {
+    font-weight: 900;
+    font-size: 60px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    line-height: 60px;
+    margin: 0;
+}
+
+.promo .promo_subheader {
+    font-weight: 900;
+    font-size: 36px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    line-height: 36px;
+    margin: 0;
+    margin-top: 22px;
+}
+
+.promo .promo_descr {
+    margin-top: 23px;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.promo .promo_btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 116px;
+    width: 259px;
+    height: 63px;
+    border: none;
+
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 63px;
+    /* identical to box height, or 350% */
+
+ 
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+}
+
+.reasons {
+    padding: 71px 0 65px 0;
+}
+
+.label {
+    display: block;
+    margin: 0 auto;
+    width: 113px;
+    height: 24px;
+
+    background: linear-gradient(0deg, #000000 0%, #000000 100%);
+    box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
+    border: none;
+    font-weight: 400;
+    font-size: 11px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 25px;
+
+    color: #FFFFFF;
+
+    mix-blend-mode: normal;
+}
+
+.title {
+    margin: 33px auto 0 auto;
+    font-weight: 700;
+    font-size: 38px;
+    
+
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #222222;
+}
+
+.reasons .reasons_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.reasons .reasons_block .reasons_round {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 26px;
+    width: 113px;
+    height: 113px;
+    background-color: #1eacc7;
+    border-radius: 100%;
+}
+
+.reasons .reasons_block .reasons_descr {
+    width: 343px;
+}
+
+.reasons .reasons_block .reasons_descr .reasons_subtitle{
+    line-height: 21px;
+    color: #1eacc7;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.reasons .reasons_block .reasons_descr .reasons_text {
+    color: #202020;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 21px;
+}
